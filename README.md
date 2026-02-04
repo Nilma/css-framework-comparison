@@ -8,9 +8,9 @@ This mini project contains **three simple UI demo pages** built using:
 
 Each page includes the same UI structure so you can compare them fairly:
 
-✅ Navbar  
-✅ Cards section  
-✅ Contact form  
+ - Navbar  
+ - Cards section  
+ - Contact form  
 
 The goal is to compare how the same layout is written using different CSS frameworks — without Next.js, React, or any other frontend framework.
 
