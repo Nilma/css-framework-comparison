@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bulma UI Demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+<body class="has-background-light">
+
+  <!-- Navbar -->
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-weight-semibold" href="./index.html">Acme</a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item is-active" href="#">Home</a>
+        <a class="navbar-item" href="#">Products</a>
+        <a class="navbar-item" href="#">About</a>
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-light is-small">Sign in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="section">
+    <div class="container">
+      <!-- Cards -->
+      <div class="is-flex is-justify-content-space-between is-align-items-flex-end mb-4">
+        <div>
+          <h1 class="title is-4 mb-1">Dashboard</h1>
+          <p class="subtitle is-6 has-text-grey">Navbar + cards + form (Bulma)</p>
+        </div>
+        <button class="button is-primary">New</button>
+      </div>
+
+      <div class="columns is-multiline">
+        <div class="column is-12-mobile is-4-desktop">
+          <div class="card">
+            <div class="card-content">
+              <div class="is-flex is-justify-content-space-between">
+                <p class="title is-6 mb-1">Revenue</p>
+                <span class="tag is-success is-light">+12%</span>
+              </div>
+              <p class="title is-3 mb-1">$24,300</p>
+              <p class="has-text-grey is-size-7">Last 30 days</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-4-desktop">
+          <div class="card">
+            <div class="card-content">
+              <div class="is-flex is-justify-content-space-between">
+                <p class="title is-6 mb-1">Users</p>
+                <span class="tag is-info is-light">New</span>
+              </div>
+              <p class="title is-3 mb-1">1,482</p>
+              <p class="has-text-grey is-size-7">Active today</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-4-desktop">
+          <div class="card">
+            <div class="card-content">
+              <div class="is-flex is-justify-content-space-between">
+                <p class="title is-6 mb-1">Tickets</p>
+                <span class="tag is-warning is-light">5 open</span>
+              </div>
+              <p class="title is-3 mb-1">27</p>
+              <p class="has-text-grey is-size-7">Awaiting response</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="card mt-5">
+        <div class="card-content">
+          <h2 class="title is-5 mb-3">Contact form</h2>
+          <form>
+            <div class="columns is-multiline">
+              <div class="column is-12-mobile is-6-tablet">
+                <div class="field">
+                  <label class="label">Full name</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Jane Doe">
+                  </div>
+                </div>
+              </div>
+
+              <div class="column is-12-mobile is-6-tablet">
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input class="input" type="email" placeholder="jane@example.com">
+                  </div>
+                </div>
+              </div>
+
+              <div class="column is-12">
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea class="textarea" rows="4" placeholder="Write your message..."></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column is-12">
+                <div class="buttons">
+                  <button class="button is-primary" type="submit">Send</button>
+                  <a class="button is-light" href="./index.html">Back</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    // Bulma navbar burger toggle (Bulma has no JS by default)
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.getElementById(burger?.dataset.target);
+      if (!burger || !menu) return;
+
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+  </script>
+</body>
+</html>
