@@ -43,7 +43,7 @@ The goal is to compare how the same layout is written using different CSS framew
 | Interactivity (dropdown, modal) | Built-in JS bundle | You add your own JS | You add your own JS |
 | Custom design flexibility | Medium | Medium | High |
 | Best for | Prototypes, dashboards, quick UI | Simple clean sites, CSS-only | Custom design systems, modern UI |
-| No-build / CDN friendly | ✅ Yes | ✅ Yes | ✅ Yes (with CDN script) |
+| No-build / CDN friendly |  Yes |  Yes |  Yes (with CDN script) |
 
 ---
 
@@ -68,22 +68,6 @@ These files use CDN links, so you can run them instantly.
 2. Install the extension: **Live Server**
 3. Right-click `index.html`
 4. Click: **Open with Live Server**
-
----
-
-#### Option 2: Python local server
-If you have Python installed:
-
-```bash
-cd ui-framework-comparison
-python -m http.server 8000
-```
-
-Then open in your browser:
-
-```
-http://localhost:8000/index.html
-```
 
 ---
 
