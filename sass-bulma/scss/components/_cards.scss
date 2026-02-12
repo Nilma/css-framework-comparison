@@ -1,0 +1,19 @@
+// scss/components/_cards.scss
+@use "../mixins";
+
+.card {
+  @include mixins.card-surface();
+  overflow: hidden;
+
+  .card-content {
+    padding: 1.25rem;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.14);
+}
+
+.tag.is-light {
+  @include mixins.pill;
+}

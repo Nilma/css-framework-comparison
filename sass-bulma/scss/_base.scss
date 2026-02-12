@@ -1,0 +1,18 @@
+// scss/_base.scss
+@use "tokens";
+
+:root { color-scheme: light; }
+
+html, body {
+  background: tokens.$bg;
+  color: tokens.$text;
+  font-family: tokens.$font-sans;
+}
+
+.section {
+  padding-top: 2rem;
+}
+
+.navbar.is-dark {
+  background: #2f343b;
+}

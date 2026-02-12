@@ -1,0 +1,15 @@
+// scss/main.scss
+@use "tokens";
+
+// Bulma v1 Sass entrypoint (bundled into css/main.css)
+@use "bulma/sass" with (
+  $primary: tokens.$primary,
+  $family-primary: tokens.$font-sans,
+  $scheme-main: tokens.$bg
+);
+
+// Your partials
+@use "base";
+@use "components/layout";
+@use "components/cards";
+@use "components/forms";
