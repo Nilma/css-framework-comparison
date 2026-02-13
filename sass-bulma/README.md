@@ -182,16 +182,6 @@ Browser renders styled UI
 
 ---
 
-# CDN vs Sass Comparison
-
-| Feature | CDN Bulma | Bulma + Sass |
-|----------|------------|--------------|
-| Setup speed | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
-| Custom theme | ❌ Hard | ✅ Easy |
-| Override colors | ❌ Manual CSS | ✅ Variable |
-| Scalable | ❌ Limited | ✅ Yes |
-| Professional setup | ❌ | ✅ |
-
 ---
 
 ---
