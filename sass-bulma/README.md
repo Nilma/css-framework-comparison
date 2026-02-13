@@ -194,3 +194,14 @@ Browser renders styled UI
 
 ---
 
+---
+
+## Copyright & Educational Use
+
+© 2026 Nilma Abbas
+
+This material was created for educational purposes only.
+
+Permission is granted to use, copy, and modify this content for teaching, classroom use, and non-commercial educational activities.
+
+Commercial redistribution or resale is not permitted without written permission from the author.
