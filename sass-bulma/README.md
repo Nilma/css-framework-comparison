@@ -179,11 +179,6 @@ Generated CSS
         ↓
 Browser renders styled UI
 ```
-
----
-
----
-
 ---
 
 ## Copyright & Educational Use
