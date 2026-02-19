@@ -1,20 +1,22 @@
 name: Build and Deploy to GitHub Pages
-
+# This workflow builds the project and deploys it to GitHub Pages whenever there is a push to the main branch or when manually triggered.
 on:
   push:
     branches:
       - main
   workflow_dispatch:
 
+    # The permissions section specifies the access rights for the workflow. Here, it allows reading repository contents, writing to GitHub Pages, and writing ID tokens for authentication.
+
 permissions:
   contents: read
   pages: write
   id-token: write
-
+# The concurrency section ensures that only one deployment workflow runs at a time for the "pages" group. If a new workflow is triggered while another is still running, the new one will wait until the current one finishes. Setting cancel-in-progress to false means that ongoing workflows will not be canceled when a new one starts.
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
+# The jobs section defines the individual tasks that make up the workflow. In this case, there are two jobs: "build" and "deploy". The "build" job compiles the Sass files into CSS and prepares the artifact for deployment, while the "deploy" job takes care of deploying the built artifact to GitHub Pages.
 jobs:
     build:
     runs-on: ubuntu-latest
