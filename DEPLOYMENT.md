@@ -86,16 +86,56 @@ The workflow performs the following steps:
 
 4.  Deploys the artifact to GitHub Pages
 
-## 6. Live Website URL
+## 6. Checking the CI/CD Pipeline
+
+To verify that the CI/CD pipeline works correctly:
+
+### Check Workflow Status
+
+1.  Go to the repository on GitHub
+2.  Click Actions
+3.  Open the workflow "Build and Deploy to GitHub Pages"
+4.  Click the latest run
+
+Status indicators:
+
+-   Green check mark: Workflow succeeded
+-   Red cross: Workflow failed
+-   Yellow circle: Workflow is running
+
+Click the build job to inspect installation and build logs. Click the
+deploy job to inspect deployment logs and view the published site URL.
+
+### Run Workflow Manually
+
+To trigger the workflow manually:
+
+1.  Go to Actions
+2.  Select the workflow
+3.  Click Run workflow
+4.  Choose branch main
+5.  Click Run
+
+This is useful for testing the pipeline without pushing new commits.
+
+### Confirm Live Deployment
+
+After a successful run:
+
+1.  Go to Settings -\> Pages
+2.  The live site URL will be displayed
+
+Alternatively:
+
+1.  Go to Actions
+2.  Open the deploy job
+3.  View the page_url output
+
+## 7. Live Website URL
 
 After a successful workflow run, the site becomes available at:
 
 https://nilma.github.io/css-framework-comparison/
-
-The link can be found in:
-
--   Settings -\> Pages
--   Or Actions -\> Latest workflow run -\> Deploy job
 
 ## Final Result
 
@@ -105,6 +145,7 @@ After:
 -   Adding .gitignore
 -   Enabling GitHub Pages (GitHub Actions)
 -   Pushing changes to main
+-   Verifying the CI/CD pipeline in Actions
 
 The GitHub Actions workflow runs successfully and deploys the site
 automatically on every push to the main branch.
